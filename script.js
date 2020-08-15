@@ -9,7 +9,6 @@ fetch(link)
 .then((res)=> res.json())
 .then((data)=> {
     cats.push(data);
-    console.log(cats[0].all[10].text);
     const animal = cats[0].all;
 
     const ranNum = Math.floor(Math.random()*(animal.length-1))+0;
